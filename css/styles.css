@@ -1,0 +1,57 @@
+body{
+    background-color: #FFE0BF;
+    margin:0%
+}
+
+header {          
+    background-color: #232F3A;
+    padding:1%      
+}
+
+header img{
+    width: 3%;
+    height: 3%;       
+}
+
+#navButton{
+    margin-top: 0.5%;
+    margin-left: 1%;
+    border-style: none;
+    background-color: #FFE0BF;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #232F3A;
+    width: 100%;
+    padding:3%
+}
+
+footer img{
+    width: 8%;
+    height: 8%;
+    
+}
+
+#mainDiv{
+    background-color: red;
+    display: grid;
+    grid-template-areas: "picdiv textDiv";
+    grid-template-columns: 50% auto;
+    grid-gap: 2%;
+    margin: 1%;
+    padding: 2%;
+}
+
+#picDiv{
+    background-color: blue;
+    padding: 1%;
+}
+
+#textDiv{
+    background-color: aqua;
+    padding:1%;
+}
