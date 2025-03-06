@@ -43,20 +43,27 @@ header img{
   opacity: 0.8;
 }
 
-#dropdown a{
+#dropdown ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#dropdown ul li{
     display: block;
     text-align: center;
     padding: 3%;
     color: white;        
 }
 
-#dropdown a:hover{
-    background-color:#C8785F ;
+#dropdown ul li:hover{
+    background-color:#C8785F;
+    cursor: pointer ;        
 }
   
 #navContainer:hover #dropdown {
     display: block;
-  }
+}
 
 footer {
     display: flex;    
