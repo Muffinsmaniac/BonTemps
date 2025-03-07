@@ -40,8 +40,11 @@
             }            
         } 
         
-        public function addProduct($productName, $description, $price){
-            $sql = 
+        public function addProduct($productName, $description, $price, $category){
+            $sql = $this->database->prepare("INSERT INTO products (Name, Description, Price, CategoryID)
+            VALUES (?, ?, ?, ?)");
+            $sql->bind_param("ssii", $productName, $description, $price, $category);         
+            $sql->execute();
         }
              
     }   
