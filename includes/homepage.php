@@ -1,7 +1,8 @@
-<div id="picDiv">
+<div id = "infoDiv">
+<div id="leftContent">
     <img src="pictures/trialphoto.webp">
 </div>
-<section id="textDiv">
+<section id="rightContent">
     <h2>TESTING</h2>
     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -10,3 +11,4 @@
     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
     sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 </section>
+</div>
