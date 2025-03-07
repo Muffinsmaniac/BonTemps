@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     let infoHTML = `
     <div id= infoDiv>
     <div id="leftContent">
-        <img src="pictures//harvesting.jpg">
-    </div>
-    <section id="rightContent">
         <h2>Om Oss</h2>
         <p>"Bla bla bla bla bla bla bla bla bla"</p>
+        
+    </div>
+    <section id="rightContent">
+        <img src="pictures//harvesting.jpg">
     </section></div>
     `;
     
@@ -33,18 +34,20 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     
     document.getElementById("homeButton").addEventListener("click", function(){    
         document.getElementById("mainDiv").innerHTML = mainHTML;
-    });
+    });  
 
-    document.getElementById("productsButton").addEventListener("click", function(){
-        fetch("includes/fetch.php")
-        .then(function(response){
-            return response.text();
-        }).then(function(htmlText) {
-            console.log(htmlText);
-            document.getElementById("mainDiv").innerHTML = `<h2>Produkter</h2>
-            <div class="productGrid">${htmlText}</div>`;
-        })       
+    document.getElementById("productsButton").addEventListener("click", async function(){
+        document.getElementById("mainDiv").innerHTML = "<h2>Produkter</h2>";
+        await fetchGoods(1,"Matbröd");
+        await fetchGoods(3,"Viennoiserie"); 
         
-    });
+    });    
 
+    async function fetchGoods(goodsType, title){
+        let response = await fetch("includes/fetch.php?type="+goodsType);  
+        let htmlText = await response.text();
+        console.log(htmlText)
+        document.getElementById("mainDiv").insertAdjacentHTML("beforeend", `<h3>${title}</h3>
+            <div class="productGrid">${htmlText}</div>`);       
+    }
 });

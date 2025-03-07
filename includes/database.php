@@ -13,15 +13,15 @@
         }
         
         //Takes all entries from the database and prints them to the website.
-        public function readData(){           
-            $sql = "SELECT * FROM products";
+        public function readData($type){           
+            $sql = "SELECT * FROM products WHERE CategoryID = $type";
             if(!$result = $this->database->query($sql)){
 	        die('Could not process the request!');
             }                       
             while($row = $result->fetch_assoc()){
                 echo 
-                "<article><div>
-                <h3>" . $row["Name"] . "</h3> </div>
+                "<article class=productBox><div class=productHeader>
+                <h3>" . $row["Name"] . "</h3> <p>". $row["Price"]."</p></div>
                 <p>". $row["Description"] ."</p>
                 </article>";
             }                               

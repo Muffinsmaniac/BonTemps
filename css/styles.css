@@ -87,10 +87,9 @@ footer img{
     height: auto;            
 }
 
-#infoDiv{    
-    background-color: red;
+#infoDiv{        
     display: grid;
-    grid-template-areas: "picdiv textDiv";
+    grid-template-areas: "leftContent rightContent";
     grid-template-columns: 50% auto;
     grid-gap: 2%;        
 }
@@ -117,9 +116,29 @@ footer img{
     padding:1%;
 }
 
-.productGrid{
-    background-color: blue;
+.productGrid{    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 5%;    
+    padding-left: 3%;
+    border-top: #232F3A solid;
+    margin-bottom: 3%;  
+}
+
+.productHeader{
+    display: flex;
+    width: 100%;
+    position: relative;            
+}
+
+.productBox p{
+    margin-top: 0;    
+    
+}
+
+.productHeader p{
+    position: absolute;
+    width: fit-content;    
+    top:0;
+    margin-top: 3%;
+    left:60%;         
 }
