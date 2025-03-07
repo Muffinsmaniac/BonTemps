@@ -25,8 +25,24 @@
                 <p>". $row["Description"] ."</p>
                 </article>";
             }                               
-        }       
+        }
         
+        public function logIn($username,$password){
+            $sql = "SELECT * FROM users WHERE username = '$username' AND passw = '$password'";
+            if(!$result = $this->database->query($sql)){
+                die('Could not process the request!');
+            }
+            if(mysqli_num_rows($result)){                
+                return true;
+            }
+            else{
+                return false;
+            }            
+        } 
+        
+        public function addProduct($productName, $description, $price){
+            $sql = 
+        }
              
     }   
     
