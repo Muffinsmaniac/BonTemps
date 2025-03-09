@@ -16,12 +16,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST" ){ //Only goes here if sent here by a PO
         header("location: login.php");}}
 ?>
 
-<div>
+<div id="loginDiv"  >
+    <h3>Log in</h3>
     <form action="login.php" method="POST">
-       Username:<br>
-        <input type="text" name="username" placeholder= "Your name"><br>
-      Password:<br>
-      <input type="password" name="password" placeholder="Password"><br>
+    <div class = inputContainer>
+        <i class="material-icons">person</i>        
+        <input type="text" name="username" placeholder= "Your name">
+    </div>
+    <div class = inputContainer>
+        <i class="material-icons">key</i>  
+        <input type="password" name="password" placeholder="Password"><br>
+    </div>
       <input type="submit">
     </form>
 </div>

@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     <div id= infoDiv>
     <div id="leftContent">
         <h2>Om Oss</h2>
-        <p>Bla bla bla bla bla bla bla bla bla Bla bla bla bla bla bla bla bla blaBla bla bla bla bla bla bla bla blaBla bla bla bla bla bla bla bla blaBla bla bla bla bla bla bla bla bla</p>
-        
+        <p>Bla bla bla bla bla bla bla bla bla Bla bla bla bla bla bla bla bla bla
+        Bla bla bla bla bla bla bla bla blaBla bla bla bla bla bla bla bla blaBla bla bla bla bla bla bla bla bla</p>        
     </div>
     <section id="rightContent">
         <img src="pictures//harvesting.jpg">

@@ -21,7 +21,7 @@
             while($row = $result->fetch_assoc()){
                 echo 
                 "<article class=productBox><div class=productHeader>
-                <h3>" . $row["Name"] . "</h3> <p>". $row["Price"]."</p></div>
+                <h3>" . $row["Name"] . "</h3> <h5>". $row["Price"]."</h5></div>
                 <p>". $row["Description"] ."</p>
                 </article>";
             }                               

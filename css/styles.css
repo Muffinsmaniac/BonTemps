@@ -12,6 +12,11 @@ header {
     padding:1%      
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+} 
+
 header img{
     width: 3%;
     height: 3%;       
@@ -90,7 +95,7 @@ footer img{
 #infoDiv{        
     display: grid;
     grid-template-areas: "leftContent rightContent";
-    grid-template-columns: 50% auto;
+    grid-template-columns: 48% 48%;
     grid-gap: 2%;        
 }
 
@@ -101,44 +106,45 @@ footer img{
     margin-bottom:3%;
 }
 
-#leftContent{
+#leftContent, #rightContent{
     /*background-color: blue;*/
     padding: 1%;
-}
-
-#leftContent img{
-    max-width: 100%;
-    height: auto;
-}   
-
-#rightContent{
-    /*background-color: aqua;*/
-    padding:1%;
 }
 
 .productGrid{    
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-left: 3%;
+    padding-top: 1%;
     border-top: #232F3A solid;
     margin-bottom: 3%;  
 }
 
 .productHeader{
     display: flex;
-    width: 100%;
-    position: relative;            
+    width: 100%;                 
 }
 
-.productBox p{
-    margin-top: 0;    
-    
+.productHeader h3{
+    margin: 0;
+    width: 80%;    
+}
+.productHeader h5{
+    margin: 0;
 }
 
-.productHeader p{
+#loginDiv{    
+    margin-left: 10%;
+    margin-bottom: 25.5%;        
+}
+
+.inputContainer{
+    margin-bottom: 1%;
+    position: relative;
+}
+
+.inputContainer i{
+    color: #232F3A;
     position: absolute;
-    width: fit-content;    
-    top:0;
-    margin-top: 3%;
-    left:60%;         
-}
+    left: -25px;
+} 
