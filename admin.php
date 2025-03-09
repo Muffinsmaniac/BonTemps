@@ -12,17 +12,25 @@
     }     
 ?>
 <div>
-    <form action= "admin.php" method="post">    
-        <input type="radio" name="category" value=1>
+    <form name="addForm" action= "admin.php" method="post">    
+        <input type="radio" name="category" value=1 required>
         <label for="bread">Bread</label><br>
         <input type="radio" name="category" value=3>
         <label for="pastry">Pastry</label><br>
-        <input type="text" name="productName" placeholder="Name for product">
+        <input type="text" name="productName" placeholder="Name for product" required>
         <label for="productName">Product name</label><br>        
-        <input type="text" name="price" placeholder="Price">
+        <input type="text" name="price" placeholder="Price" required>
         <label for="price">Product price</label><br>
         <label for="description">Description</label><br>      
-        <textarea rows=7 cols=40 name="description"> </textarea>        
-        <input type="submit">
+        <textarea rows=7 cols=40 name="description" required> </textarea>        
+        <input type="submit" value="Add product">
     </form>
 </div>
+
+<form action="includes/logout.php" method="post">
+    <input type="submit" value="Logout">
+</form>
+
+
+</body>
+</html>

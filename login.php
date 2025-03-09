@@ -1,7 +1,8 @@
 <?php
+session_start();
 include("includes/header.php");
 include("includes/database.php");
-session_start();
+
 
 if($_SERVER["REQUEST_METHOD"] == "POST" ){ //Only goes here if sent here by a POST method.
     $username = $_POST["username"];

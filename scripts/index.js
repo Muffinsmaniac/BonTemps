@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM to load.
+document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM to load.  
 
     let infoHTML = `
     <div id= infoDiv>
@@ -48,5 +48,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
         let htmlText = await response.text();        
         document.getElementById("mainDiv").insertAdjacentHTML("beforeend", `<h3>${title}</h3>
             <div class="productGrid">${htmlText}</div>`);       
-    }
+    } 
+        
+
 });
