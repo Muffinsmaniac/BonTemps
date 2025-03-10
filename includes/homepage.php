@@ -1,8 +1,8 @@
-<div id = "infoDiv">
-<div id="leftContent">
-    <img src="pictures/trialphoto.webp">
+<div class = "infoDiv">
+<div class="leftContent">
+    <img src="pictures/counter.jpeg">
 </div>
-<section id="rightContent">
+<section class="rightContent">
     <h2>TESTING</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
     ut labore et dolore magna aliqua. Ut enim ad minim veniam,

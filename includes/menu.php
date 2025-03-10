@@ -5,7 +5,7 @@
             <li id="homeButton">Hem</li>
             <li id="infoButton">Om oss</li>
             <li id="productsButton">Produkter</li>
-            <li>Kontakt</li>
+            <li id="contactButton">Kontakt</li>
             <ul>          
         </div>
     </div>

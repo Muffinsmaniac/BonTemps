@@ -4,15 +4,19 @@
     include("includes/header.php");
     include("includes/database.php");
 
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-        $database = new DBHandler();
+    $database = new DBHandler();
+    if($_SERVER["REQUEST_METHOD"] == "POST"){        
         if(!empty($_POST["productName"]) && !empty($_POST["description"]) && !empty($_POST["price"])){                      
             $database->addProduct($_POST["productName"],$_POST["description"], $_POST["price"], $_POST["category"]);
+        }
+        elseif(!empty($_POST["idNumber"])){
+            $database->deleteProduct($_POST["idNumber"]);
         }               
-    }     
+    }        
 ?>
-<div>
-    <form name="addForm" action= "admin.php" method="post">    
+<div class = infoDiv>
+<div class = leftContent>
+    <form id="adminForm" action= "admin.php" method="post">    
         <input type="radio" name="category" value=1 required>
         <label for="bread">Bread</label><br>
         <input type="radio" name="category" value=3>
@@ -27,10 +31,17 @@
     </form>
 </div>
 
+<div class = rightContent>
+    <h3>Productlist</h3>
+    <ul id=productList>
+        <?php $database->adminListProducts() ?>
+    </ul>
+</div>
+</div>
+
 <form action="includes/logout.php" method="post">
     <input type="submit" value="Logout">
 </form>
-
 
 </body>
 </html>

@@ -48,7 +48,7 @@ header img{
   opacity: 0.8;
 }
 
-#dropdown ul{
+ul{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -92,11 +92,12 @@ footer img{
     height: auto;            
 }
 
-#infoDiv{        
+.infoDiv{        
     display: grid;
     grid-template-areas: "leftContent rightContent";
     grid-template-columns: 48% 48%;
-    grid-gap: 2%;        
+    grid-gap: 2%;
+        
 }
 
 #mainDiv{
@@ -106,9 +107,9 @@ footer img{
     margin-bottom:3%;
 }
 
-#leftContent, #rightContent{
+.leftContent, .rightContent{
     /*background-color: blue;*/
-    padding: 1%;
+    padding: 1%;    
 }
 
 .productGrid{    
@@ -147,4 +148,38 @@ footer img{
     color: #232F3A;
     position: absolute;
     left: -25px;
-} 
+}
+
+#adminForm{
+   margin: 5%;
+}
+
+#productList{  
+  width: 40%;
+  height: 80%;
+  overflow: auto;
+  background-color: white;
+  border-style: solid;
+  border-color: #232F3A; 
+}
+
+#openinghours{
+    width: 23%;
+    border: solid;
+    background-color: #FBCBB4; 
+}
+
+#openinghours p{    
+    margin: 2%;   
+}
+
+#productList li, #openinghours li{           
+    display: flex;
+    justify-content: space-between;
+       
+}
+
+#productList li{
+    border-bottom: solid #232F3A;
+    padding: 5%;
+}

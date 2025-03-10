@@ -44,6 +44,27 @@
             $sql->bind_param("ssii", $productName, $description, $price, $category);         
             $sql->execute();
         }
+
+        public function deleteProduct($index){            
+            $sql = "DELETE FROM products WHERE ProductID=" . $index;
+            $this->database->query($sql);                        
+        }
+
+        public function adminListProducts(){
+            $sql = "SELECT * FROM products";
+            if(!$result = $this->database->query($sql)){
+	        die('Could not process the request!');
+            }                       
+            while($row = $result->fetch_assoc()){
+                echo "<li>" . $row["Name"] .
+                "<form class='deletebutton'action='admin.php' method='POST'
+                onsubmit= \"return confirm('Do you really want to delete this product?')\">
+                 <input type='submit' value='Delete Product'>
+                <input type='hidden' name='idNumber' value=" . $row["ProductID"] ." >
+                </form></li>";                
+            }             
+
+        }
              
     }   
     
