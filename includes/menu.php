@@ -6,6 +6,6 @@
             <li id="infoButton">Om oss</li>
             <li id="productsButton">Produkter</li>
             <li id="contactButton">Kontakt</li>
-            <ul>          
+            </ul>          
         </div>
     </div>

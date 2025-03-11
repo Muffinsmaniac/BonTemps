@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
 
     document.getElementById("productsButton").addEventListener("click", async function(){
         document.getElementById("mainDiv").innerHTML = "<h2>Produkter</h2>";
-        await fetchGoods(1,"Matbröd");
-        await fetchGoods(3,"Viennoiserie"); 
+        await fetchGoods("Bread","Matbröd");
+        await fetchGoods("Pastry","Viennoiserie"); 
         
     });    
 
