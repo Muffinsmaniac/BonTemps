@@ -1,3 +1,4 @@
+<!-- The menu with the buttons that dynamically changes the websit -->
 <div id="navContainer">
         <button id="navButton"><i class="material-icons">menu</i></button>                       
         <div id="dropdown">

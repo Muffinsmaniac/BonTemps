@@ -1,3 +1,5 @@
+<!--This webpage is only for admin, here products can be added or removed
+Can only be reached if a user is logged in -->
 <?php
     session_start();
     if(!isset($_SESSION['loggedin'])){header("location: login.php");}
@@ -12,15 +14,18 @@
         elseif(!empty($_POST["idNumber"])){
             $database->deleteProduct($_POST["idNumber"]);
         }               
-    }        
+    }
+            
 ?>
 <div class = infoDiv>
 <div class = leftContent>
     <form id="adminForm" action= "admin.php" method="post">    
         <input type="radio" name="category" value=1 required>
         <label for="bread">Bread</label><br>
-        <input type="radio" name="category" value=3>
+        <input type="radio" name="category" value=2>
         <label for="pastry">Pastry</label><br>
+        <input type="radio" name="category" value=3>
+        <label for="bread">Drink</label><br>
         <input type="text" name="productName" placeholder="Name for product" required>
         <label for="productName">Product name</label><br>        
         <input type="text" name="price" placeholder="Price" required>

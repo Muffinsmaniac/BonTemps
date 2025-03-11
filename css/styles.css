@@ -33,10 +33,10 @@ header img{
     background-color: #FFE0BF;
 }
 
-#navButton:hover{
+#navButton:hover, #instaIcon:hover{
     transform: rotate(90deg);
     transition: 0.5s;
-    color: white;
+    color: white;    
 }
 
 #dropdown{
@@ -166,7 +166,8 @@ footer img{
 #openinghours{
     width: 23%;
     border: solid;
-    background-color: #FBCBB4; 
+    background-color: #FBCBB4;
+    padding: 1%; 
 }
 
 #openinghours p{    

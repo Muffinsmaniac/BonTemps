@@ -1,3 +1,4 @@
+<!-- Unsets and destroys a session when the admin logs out. -->
 <?php
 session_start();
 session_unset();

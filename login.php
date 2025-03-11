@@ -1,3 +1,4 @@
+<!-- Log in page in order to reach the admin part of the site -->
 <?php
 session_start();
 include("includes/header.php");
@@ -5,6 +6,7 @@ include("includes/database.php");
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST" ){ //Only goes here if sent here by a POST method.
+    if(!empty($_POST["username"]) && (!empty($_POST["password"]))){
     $username = $_POST["username"];
     $password = $_POST["password"];
     $db = new DBHandler();
@@ -14,6 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" ){ //Only goes here if sent here by a PO
     }
     else{
         header("location: login.php");}}
+    }    
 ?>
 
 <div id="loginDiv"  >
