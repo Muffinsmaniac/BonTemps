@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     </section>
     <section class="rightContent">
         <h2>Om Oss</h2>
-            <p>Bontemps grundades 2023 av Marine och Aurélien, efter att ha blvit i Svergie 5 år tidigare. <br>
+            <p>Bontemps grundades 2023 av Marine och Aurélien, efter att de hade blivit kära i Svergie 5 år tidigare. <br>
             De bestämde då att lämna Frankrike bakom sig för att öppna ett bageri i staden som låg dem varmast om hjärtat: Sundsvall! <br><br>
             Som fransk bagare tyckte Aurélien att det var viktigt att först lära sig det svenska smakerna.
             Sagt och gjort! De bestämde sig att först bosätta sig i Stockholm i några månader för att arbeta i ett svenskt bageri.
