@@ -5,8 +5,8 @@
         
         //Connects to database during construction and checks so the connection did not fail.
         function __construct(){
-            //$this->database = new mysqli('localhost', 'admin', 'potatis', 'bontemp');      //For the local database.            
-            $this->database = new mysqli('studentmysql.miun.se', 'jeel2301', 'xqaegmme', 'jeel2301');
+            $this->database = new mysqli('localhost', 'admin', 'potatis', 'bontemp');      //For the local database.            
+            //$this->database = new mysqli('studentmysql.miun.se', 'jeel2301', 'xqaegmme', 'jeel2301');
             if($this->database->connect_errno){
                 die('Database failed to connect: ' . $this->database->connect_errno);            
             }                        
