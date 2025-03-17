@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     let infoHTML = `
     <div class= infoDiv>
     <section class="leftContent">
-        <img src="pictures/team.jpeg">
+        <img src="pictures/team.jpeg" alt="Picture of the team working at Bon Temp">
     </section>
     <section class="rightContent">
         <h2>Om Oss</h2>
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     let mainHTML = `
     <div class= infoDiv>    
     <section class="leftContent">
-        <img src="pictures/logo_blue.png">
+        <img src="pictures/logo_blue.png" alt="Bon temp Logo">
         <h2>Bonjour!</h2>
         <p>Välkommen till det franska bageriet i hjärtat av Sundsvall!<br><br>
         I vårt lilla bageri brinner vi för hantverksmässigt framställda bröd och bakverk.<br>
@@ -39,14 +39,14 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
         </ul>        
     </section>
     <section class="rightContent">
-        <img src="pictures/counter.jpeg">
+        <img src="pictures/counter.jpeg" alt="Picture of the counter with various baked goods">
     </section></div>
     `;
 
     let contactHTML = `
     <div class= infoDiv>
     <div class="leftContent">
-        <img src="pictures/street2.jpeg">        
+        <img src="pictures/street2.jpeg" alt="Croissant in the street">        
     </div>
     <section class="rightContent">
         <h2>Kontakt</h2>

@@ -38,14 +38,16 @@ Can only be reached if a user is logged in -->
 
 <div class = rightContent>
     <h3>Productlist</h3>
-    <ul id=productList>
+    <div id=productList>
+    <ul>
         <?php $database->adminListProducts() ?>
     </ul>
+    </div>
 </div>
 </div>
 
 <form action="includes/logout.php" method="post">
-    <input type="submit" value="Logout">
+    <input id= buttonLogout type="submit" value="Logout">
 </form>
 
 </body>

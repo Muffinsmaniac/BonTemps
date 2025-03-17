@@ -115,7 +115,7 @@ footer img{
     margin-bottom:3%;
 }
 
-.leftContent, .rightContent{
+.leftContent, .rightContent {
     /*background-color: blue;*/
     padding: 1%;    
 }
@@ -152,20 +152,21 @@ footer img{
     position: relative;
 }
 
-.inputContainer i{
+.inputContainer em{
     color: #232F3A;
     position: absolute;
     left: -25px;
+    top: -3px;
 }
 
 #adminForm{
    margin: 5%;
 }
 
-#productList{  
+#productList{ 
   width: 40%;
-  height: 80%;
-  overflow: auto;
+  height: 520px;   
+  overflow-y: auto;
   background-color: white;
   border-style: solid;
   border-color: #232F3A; 
@@ -191,4 +192,10 @@ footer img{
 #productList li{
     border-bottom: solid #232F3A;
     padding: 5%;
+}
+
+#buttonLogout{    
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 2%;
 }

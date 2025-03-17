@@ -1,6 +1,6 @@
 <!-- The menu with the buttons that dynamically changes the websit -->
 <div id="navContainer">
-        <button id="navButton"><i class="material-icons">menu</i></button>                       
+        <button id="navButton"><em class="material-icons">menu</em></button>                       
         <nav id="dropdown">
             <ul>
             <li id="homeButton">Hem</li>
