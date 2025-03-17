@@ -91,6 +91,9 @@ footer section a{
     color: white;
     text-decoration: none;    
 }
+footer section a:hover{
+    cursor: default;
+}
 
 footer img{    
     width: 8%;

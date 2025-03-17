@@ -10,5 +10,5 @@
 </head>
 <body>
     <header>
-        <img src="pictures/wheat.png" alt="Lovely wheat logo">            
+        <a href= "index.php"><img src="pictures/wheat.png" alt="Lovely wheat logo"></a>            
     </header>
