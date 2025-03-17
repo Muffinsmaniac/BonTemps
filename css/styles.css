@@ -65,9 +65,11 @@ ul{
     background-color:#C8785F;
     cursor: pointer ;        
 }
-  
+
+@media (hover:hover){
 #navContainer:hover #dropdown {
     display: block;
+}
 }
 
 footer {
@@ -76,15 +78,18 @@ footer {
     bottom: 0;
     background-color: #232F3A;
     width: 100%;
-    padding-top: 1%;    
+    padding-top: 1%; 
+    padding-bottom: 1%;   
 }
 
 footer section{
    margin-right: 39%;
    margin-left:1%;
 }
-footer section p{
+
+footer section a{
     color: white;
+    text-decoration: none;    
 }
 
 footer img{    

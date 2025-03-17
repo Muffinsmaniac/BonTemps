@@ -11,9 +11,11 @@ header img{
 }
 
 #dropdown{
-    display: none;
+    display: block;
+    visibility: hidden;
     width: 90%;
     margin-left: 3%;
+    transition: visibility 0.001s;
 }
 
 #dropdown ul li{
@@ -51,3 +53,7 @@ footer img{
     background-color: #FBCBB4; 
 }
 
+#navContainer:focus-within #dropdown{
+    display: block;
+    visibility: visible;
+}
