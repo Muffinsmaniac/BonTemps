@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     let infoHTML = `
     <div class= infoDiv>
     <section class="leftContent">
-        <img src="pictures/team.jpeg" alt="Picture of the team working at Bon Temp">
+        <img src="pictures/team2.jpg" alt="Picture of the team working at Bon Temp">
     </section>
     <section class="rightContent">
         <h2>Om Oss</h2>
@@ -19,15 +19,15 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     let mainHTML = `
     <div class= infoDiv>    
     <section class="leftContent">
-        <img src="pictures/logo_blue.png" alt="Bon temp Logo">
-        <h2>Bonjour!</h2>
+        <img src="pictures/logo_blue.png" id="frontLogo" alt="Bon temp Logo">
+        <h2 class="mainHeader">Bonjour!</h2>
         <p>Välkommen till det franska bageriet i hjärtat av Sundsvall!<br><br>
         I vårt lilla bageri brinner vi för hantverksmässigt framställda bröd och bakverk.<br>
         Här delar franska specialiteter som baguetter, croissant och levainbröd broderlikt plats med svenska klassisker, såsom kanelbullen.<br>
         Kom in på en kopp kaffe, slå dig ner och njut av Sundsvalls egna lilla del av Frankrike!<br><br>
         Accueillir! 
         </p>
-        <h2>Öppettider</h2>
+        <h2 class="mainHeader" id="openingheader">Öppettider</h2>
         <ul id=openinghours>
             <li><p>Måndag</p><p>07 - 14</p></li>
             <li><p>Tisdag</p><p>07 - 14</p></li>
@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
         </ul>        
     </section>
     <section class="rightContent">
-        <img src="pictures/counter.jpeg" alt="Picture of the counter with various baked goods">
+        <img src="pictures/counter6.jpg" class="picture" alt="Picture of the counter with various baked goods"></img>
     </section></div>
     `;
 
     let contactHTML = `
     <div class= infoDiv>
     <div class="leftContent">
-        <img src="pictures/street2.jpeg" alt="Croissant in the street">        
+        <img class="picture" src="pictures/street7.jpg" alt="Croissant in the street">        
     </div>
     <section class="rightContent">
         <h2>Kontakt</h2>
         <p>Kom gärna in och prata med oss om det är något du undrar!<br><br>
-        Vi tar även emot beställningar via <a href=mailto:placeholder1337@gmail.com>email.</a><br><br>
+        Vi tar även emot beställningar via <a href=mailto:hej@bontempsbageri.com>email.</a><br><br>
         Eller på Instagram!        
         </p>
         <a href=http://www.instagram.com/bontemps_bageri> <img src="pictures/instagram.png" id=instaIcon> </a>
@@ -86,5 +86,5 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
         document.getElementById("mainDiv").insertAdjacentHTML("beforeend", `<h3>${title}</h3>
             <div class="productGrid">${htmlText}</div>`);       
     }        
-
+    //
 });

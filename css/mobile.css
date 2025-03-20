@@ -50,10 +50,29 @@ footer img{
 #openinghours{
     width: 90%;
     border: solid;
-    background-color: #FBCBB4; 
+    background-color: #FBCBB4;
+    margin: auto;
+}
+
+#openingheader{
+    margin-left: 30%;
 }
 
 #navContainer:focus-within #dropdown{
     display: block;
     visibility: visible;
+}
+
+.rightContent h2{
+    padding-top: 0%;    
+}
+.rightContent p{
+    padding-bottom: 5%;    
+}
+
+#instaIcon{
+    display: block;
+    margin: auto;
+    padding-top: 0%;
+    padding-bottom: 8%;    
 }

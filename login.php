@@ -23,18 +23,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST" ){ //Only goes here if sent here by a PO
     <h3>Log in</h3>
     <form action="login.php" method="POST">
     <div class = inputContainer>
-        <em class="material-icons">person</em>
-        <label for="username">Username</label>          
-        <input type="text" name="username" id="username" placeholder= "Your name">             
+        <label for="username">Username</label><br>
+        <em class="material-icons">person</em>                  
+        <input type="text" name="username" id="username" placeholder= "Your name">                     
     </div>
     <div class = inputContainer>
-        <em class="material-icons">key </em>   
-        <label for="password">Password</label>      
-        <input type="password" name="password" id="password" placeholder="Password"><br>
+        <label for="password">Password</label><br>
+        <em class="material-icons">key</em>               
+        <input type="password" name="password" id="password" placeholder="Password">
+        
     </div>
       <input type="submit" value="Login">
     </form>
 </div>
 
 
-<?php include("Includes/footer.php"); ?>
+
