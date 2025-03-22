@@ -1,3 +1,7 @@
+<!--
+Author: Jesper Elovsson, jeel2301
+Datateknik
+Webbprogrammering DT058G -->
 <?php
     //The class that handles everyhing database related.
     class DBHandler{        

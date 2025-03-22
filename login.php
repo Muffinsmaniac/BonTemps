@@ -1,4 +1,9 @@
-<!-- Log in page in order to reach the admin part of the site -->
+<!-- 
+Author: Jesper Elovsson, jeel2301
+Datateknik
+Webbprogrammering DT058G
+
+Log in page in order to reach the admin part of the site -->
 <?php
 session_start();
 include("includes/header.php");

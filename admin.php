@@ -1,4 +1,8 @@
-<!--This webpage is only for admin, here products can be added or removed
+<!--
+Author: Jesper Elovsson, jeel2301
+Datateknik
+Webbprogrammering DT058G
+This webpage is only for admin, here products can be added or removed
 Can only be reached if a user is logged in -->
 <?php
     session_start();

@@ -1,4 +1,9 @@
-<!--Main structure of the website -->
+<!--
+Author: Jesper Elovsson, jeel2301
+Datateknik
+Webbprogrammering DT058G
+
+Main structure of the website -->
 <?php
     include("includes/header.php");
     include("includes/menu.php");

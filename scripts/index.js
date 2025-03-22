@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     </section></div>
     `;
     
+    //The HTML used on the home page.
     let mainHTML = `
     <div class= infoDiv>    
     <section class="leftContent">
@@ -43,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     </section></div>
     `;
 
+    //The HTML used on the "Kontakt" page.
     let contactHTML = `
     <div class= infoDiv>
     <div class="leftContent">
@@ -58,8 +60,10 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
     </section></div>
     `;
 
+    //Sets the main html as the default one on start.
     document.getElementById("mainDiv").innerHTML = mainHTML;    
 
+    //Following three functions changes the HTML of the main content.
     document.getElementById("infoButton").addEventListener("click", function(){
         document.getElementById("mainDiv").innerHTML = infoHTML;       
     });
@@ -72,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
         document.getElementById("mainDiv").innerHTML = contactHTML;       
     });
 
+    //Prints out all the different products available
     document.getElementById("productsButton").addEventListener("click", async function(){
         document.getElementById("mainDiv").innerHTML = "<h2>Produkter</h2>";
         await fetchGoods("Bread","Matbröd");
@@ -80,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){ //Waiting for the DOM 
         
     });    
 
+    //Fetches the goods of a certain category and adds prints them on the site.
     async function fetchGoods(goodsType, title){
         let response = await fetch("includes/fetch.php?type="+goodsType);  
         let htmlText = await response.text();        

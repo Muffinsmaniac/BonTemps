@@ -1,4 +1,9 @@
-<!-- The menu with the buttons that dynamically changes the websit -->
+<!-- 
+Author: Jesper Elovsson, jeel2301
+Datateknik
+Webbprogrammering DT058G
+
+The menu with the buttons that dynamically changes the websit -->
 <div id="navContainer">
         <button id="navButton"><em class="material-icons">menu</em></button>                       
         <nav id="dropdown">
